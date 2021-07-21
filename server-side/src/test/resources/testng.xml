@@ -1,0 +1,28 @@
+<!-- This is a DTD (Document Type Definition). It simply defines the valid 
+	tags that we are allowed to use inside of this XML file. -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- A suite is a collection of TestNG tests. -->
+<suite name="sweet_suite">
+	<!-- Tests are denoted by the <test> tag. Tests are collections of test 
+		classes that we would like to run as a part of this suite. -->
+	<test name="TestNGBasics Test">
+		<!-- We can use the <groups> tag to specify which test groups we would 
+			like to run or even exclude. -->
+		<groups>
+			<run>
+				<include name="group1" />
+				<include name="group2" />
+			</run>
+		</groups>
+		<!-- I'm specifying the test classes which belong to this TestNG test. -->
+		<classes>
+			<class name="testng.TestNGBasics" />
+		</classes>
+	</test>
+	<test name="Another Test">
+		<classes>
+			<class name="testng.TestNGBasics" />
+		</classes>
+	</test>
+</suite>
