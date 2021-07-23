@@ -56,6 +56,11 @@
 			<artifactId>slf4j-api</artifactId>
 			<version>1.8.0-beta4</version>
 		</dependency>
+			<properties>
+  <sonar.projectKey>jenkins_demo</sonar.projectKey>
+  <sonar.organization>russchristina-github</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
 
 		<dependency>
 			<groupId>org.slf4j</groupId>
